@@ -1,0 +1,38 @@
+POST http://localhost:3001/api/validate/class-validator HTTP/1.1
+Content-Type: application/json
+
+{
+    "unknown": "unknown",
+    "name": "Alice",
+    "email": "alice@mail.ru",
+    "role": "manager",
+    "isActive": true,
+    "rating": 10
+}
+
+###
+
+POST http://localhost:3001/api/validate/yup HTTP/1.1
+Content-Type: application/json
+
+{
+    "unknown": "unknown",
+    "name": "Alice",
+    "email": "alice@mail.ru",
+    "role": "manager",
+    "isActive": true,
+    "rating": 10
+}
+
+###
+
+POST http://localhost:3001/api/validate/joi HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "f",
+    "email": "alice@mail.ru",
+    "role": "manager",
+    "isActive": true,
+    "rating": 10
+}
